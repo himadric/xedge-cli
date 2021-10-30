@@ -4,7 +4,7 @@ The Sitecore Experience Edge for Content Hub Cli is a command line interface for
 ## Installation
 The Cli is an npm package that can be installed globally in your machine using below cpmmand.
 
-npm -i -g @himadric/xedge-cli
+npm install -g @himadric/xedge-cli
 
 ## Usage
 To see command help you can always run the command with --help option.
