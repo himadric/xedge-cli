@@ -7,9 +7,9 @@ const envHelpers = require("../helpers/envHelpers");
 const axios = require("axios");
 
 const options = yargs
- .usage("Usage: get-admin-token -i <Client ID> -s <Client Secret>")
- .option("client_id", { alias: "i", describe: "Provide OAuth Client ID", type: "string", demandOption: true })
- .option("client_secret", { alias: "s", describe: "Provide OAuth Client Secret", type: "string", demandOption: true })
+ .usage("Usage: get-admin-token --ci <Client ID> --cs <Client Secret>")
+ .option("client_id", { alias: "ci", describe: "Provide OAuth Client ID", type: "string", demandOption: true })
+ .option("client_secret", { alias: "cs", describe: "Provide OAuth Client Secret", type: "string", demandOption: true })
  .argv;
 
 const token_url = envHelpers.getTokenUrl();

@@ -1,39 +1,48 @@
 {
-  "name": "xedge-cli",
+  "name": "@himadric/xedge-cli",
   "version": "1.0.0",
-  "description": "Sitecore Experience Edge Cli.",
-  "main": "bin/index.js",
+  "description": "Sitecore Experience Edge for Content Hub Cli.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "get-admin-token": "./bin/admin/getAdminToken.js",
-    "setup-env": "./bin/admin/setup.js",
-    "delete-cache": "./bin/admin/deleteCache.js",
-    "delete-content": "./bin/admin/deleteContent.js",
-    "get-settings": "./bin/admin/getSettings.js",
-    "update-settings": "./bin/admin/updateSettings.js",
-    "get-webhooks": "./bin/admin/getWebhooks.js",
-    "create-webhook": "./bin/admin/createWebhook.js",
-    "delete-webhook": "./bin/admin/deleteWebhook.js",
-    "update-webhook": "./bin/admin/updateWebhook.js",
-    "get-api-keys": "./bin/token api/getApiKeys.js",
-    "get-api-key-by-hash": "./bin/token api/getApiKeyByHash.js",
-    "get-api-key-by-token": "./bin/token api/getApiKeyByToken.js",
-    "create-api-key": "./bin/token api/createApiKey.js",
-    "revoke-api-key-by-hash": "./bin/token api/revokeApiKeyByHash.js",
-    "revoke-api-key-by-token": "./bin/token api/revokeApiKeyByToken.js",
-    "rename-api-key-by-hash": "./bin/token api/renameApiKeyByHash.js",
-    "rename-api-key-by-token": "./bin/token api/renameApiKeyByToken.js"
+    "get-admin-token": "bin/admin/getAdminToken.js",
+    "setup-env": "bin/admin/setup.js",
+    "delete-cache": "bin/admin/deleteCache.js",
+    "delete-content": "bin/admin/deleteContent.js",
+    "get-settings": "bin/admin/getSettings.js",
+    "update-settings": "bin/admin/updateSettings.js",
+    "get-webhooks": "bin/admin/getWebhooks.js",
+    "create-webhook": "bin/admin/createWebhook.js",
+    "delete-webhook": "bin/admin/deleteWebhook.js",
+    "update-webhook": "bin/admin/updateWebhook.js",
+    "get-api-keys": "bin/token api/getApiKeys.js",
+    "get-api-key-by-hash": "bin/token api/getApiKeyByHash.js",
+    "get-api-key-by-token": "bin/token api/getApiKeyByToken.js",
+    "create-api-key": "bin/token api/createApiKey.js",
+    "revoke-api-key-by-hash": "bin/token api/revokeApiKeyByHash.js",
+    "revoke-api-key-by-token": "bin/token api/revokeApiKeyByToken.js",
+    "rename-api-key-by-hash": "bin/token api/renameApiKeyByHash.js",
+    "rename-api-key-by-token": "bin/token api/renameApiKeyByToken.js"
   },
-  "keywords": [],
+  "keywords": [
+    "xedge-cli",
+    "Sitecore"
+  ],
+  "homepage": "https://github.com/himadric/xedge-cli",
   "author": "Himadri Chakrabarti",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "axios": "^0.23.0",
-    "boxen": "^6.2.1",
     "chalk": "^4.1.2",
-    "netrc-rw": "^1.0.0",
     "yargs": "^17.2.1"
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/himadric/xedge-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/himadric/xedge-cli/issues"
   }
 }
