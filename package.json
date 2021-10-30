@@ -1,0 +1,39 @@
+{
+  "name": "xedge-cli",
+  "version": "1.0.0",
+  "description": "Sitecore Experience Edge Cli.",
+  "main": "bin/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "get-admin-token": "./bin/admin/getAdminToken.js",
+    "setup-env": "./bin/admin/setup.js",
+    "delete-cache": "./bin/admin/deleteCache.js",
+    "delete-content": "./bin/admin/deleteContent.js",
+    "get-settings": "./bin/admin/getSettings.js",
+    "update-settings": "./bin/admin/updateSettings.js",
+    "get-webhooks": "./bin/admin/getWebhooks.js",
+    "create-webhook": "./bin/admin/createWebhook.js",
+    "delete-webhook": "./bin/admin/deleteWebhook.js",
+    "update-webhook": "./bin/admin/updateWebhook.js",
+    "get-api-keys": "./bin/token api/getApiKeys.js",
+    "get-api-key-by-hash": "./bin/token api/getApiKeyByHash.js",
+    "get-api-key-by-token": "./bin/token api/getApiKeyByToken.js",
+    "create-api-key": "./bin/token api/createApiKey.js",
+    "revoke-api-key-by-hash": "./bin/token api/revokeApiKeyByHash.js",
+    "revoke-api-key-by-token": "./bin/token api/revokeApiKeyByToken.js",
+    "rename-api-key-by-hash": "./bin/token api/renameApiKeyByHash.js",
+    "rename-api-key-by-token": "./bin/token api/renameApiKeyByToken.js"
+  },
+  "keywords": [],
+  "author": "Himadri Chakrabarti",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.23.0",
+    "boxen": "^6.2.1",
+    "chalk": "^4.1.2",
+    "netrc-rw": "^1.0.0",
+    "yargs": "^17.2.1"
+  }
+}

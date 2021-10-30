@@ -1,0 +1,10 @@
+{
+    "label": "My new webhook",
+    "createdBy": "Himadri",
+    "uri": "https://localhost",
+    "method": "GET",
+    "headers": {
+        "X-Custom-Header1":"foo bar"
+    },
+    "body": "bar"
+}

@@ -1,0 +1,9 @@
+  {
+   "label": "Example Key from cli",
+   "scopes": [
+    "audience-preview",
+    "content-#everything#"
+   ],
+   "createdBy": "hchakrabarti@nishtechinc.com",
+   "created": "2021-10-02T13:34:24.3395067+00:00"
+  }
