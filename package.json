@@ -1,6 +1,6 @@
 {
   "name": "@himadric/xedge-cli",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Sitecore Experience Edge for Content Hub Cli.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
