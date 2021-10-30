@@ -14,7 +14,7 @@ command --help
 ### Setup
 To set up your local with Sitecore Experience Edge URLs, run the below command. This needs to run only once unless your Experience Edge environment is modified.
 
-setup-env --tkn_url <Token URL> --aud_url <Audience Url> --adm_url <Admin URL> --key_url <Preview URL>
+setup-env --tkn_url \<Token URL\> --aud_url \<Audience Url\> --adm_url \<Admin URL\> --key_url \<Preview URL\>
 
 ### Get JWT token
 To get the JWT token
