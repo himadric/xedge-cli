@@ -7,9 +7,7 @@ The Cli is an npm package that can be installed globally in your machine using b
 npm -i -g @himadric/xedge-cli
 
 ## Usage
-To see command help you can always run the command
-
-command --help
+To see command help you can always run the command with --help option.
 
 ### Setup
 To set up your local with Sitecore Experience Edge URLs, run the below command. This needs to run only once unless your Experience Edge environment is modified.
@@ -29,7 +27,7 @@ xedge-create-webhook -f \<json request file\>\
 xedge-delete-webhook --id \<Webhook Id\>\
 xedge-update-webhook -f \<json request file\>\
 xedge-get-settings\
-xedge-update-settings --contentCacheAutoClear \<true or false\> --mediaCacheAutoClear \<true or false\> --tenantCacheAutoClear \<true or false\> --contentCacheTtl \<duration\> --mediaCacheTtl \<duration\>\
+xedge-update-settings --contentCacheAutoClear \<true or false\> --mediaCacheAutoClear \<true or false\> --tenantCacheAutoClear \<true or false\> --contentCacheTtl \<duration\> --mediaCacheTtl \<duration\>
 
 ### Key Management Commands
 xedge-create-api-key -f \<json request file\>\
@@ -39,7 +37,7 @@ xedge-get-api-keys\
 xedge-rename-api-key-by-hash -h \<hash\> -n \<new name\>\
 xedge-rename-api-key-by-token -t \<token\>\
 xedge-revoke-api-key-by-hash -h \<hash\>\
-xedge-revoke-api-key-by-token -t \<token\>\
+xedge-revoke-api-key-by-token -t \<token\>
 
 ## Dependencies
 This package borrowed code from https://github.com/treygriffith/netrc-rw
