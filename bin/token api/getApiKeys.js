@@ -6,9 +6,9 @@ const envHelpers = require("../helpers/envHelpers");
 const axios = require("axios");
 
 const options = yargs
- .usage("Usage: get-api-keys")
+ .usage("Usage: xedge-get-api-keys")
  .showHelpOnFail(false, "oops, something went wrong! run with --help.")
- .example("get-api-keys")
+ .example("xedge-get-api-keys")
  .argv;
 
 const token = envHelpers.getToken();

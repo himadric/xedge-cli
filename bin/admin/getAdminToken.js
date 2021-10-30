@@ -7,7 +7,7 @@ const envHelpers = require("../helpers/envHelpers");
 const axios = require("axios");
 
 const options = yargs
- .usage("Usage: get-admin-token --ci <Client ID> --cs <Client Secret>")
+ .usage("Usage: xedge-get-admin-token --ci <Client ID> --cs <Client Secret>")
  .option("client_id", { alias: "ci", describe: "Provide OAuth Client ID", type: "string", demandOption: true })
  .option("client_secret", { alias: "cs", describe: "Provide OAuth Client Secret", type: "string", demandOption: true })
  .argv;
@@ -38,16 +38,3 @@ axios.post(`${token_url}`, params, config)
     console.log(chalk.red.bold(err.message));
     throw new Error(err);
   })
-
-//read
-//var token = netrc.host('xedge.auth0').token;
-// console.log(pass);
-// //edit
-// netrc.host('surge.surge.sh').password = greeting;
-// netrc.write();
-// var pass = netrc.host('surge.surge.sh').password;
-
-//add new
-// netrc.addHost('xedge.auth0').token = greeting;
-// netrc.write();
-// token = netrc.host('xedge.auth0').token;

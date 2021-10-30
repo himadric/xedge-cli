@@ -6,9 +6,9 @@ const envHelpers = require("../helpers/envHelpers");
 const axios = require("axios");
 
 const options = yargs
- .usage("Usage: get-settings")
+ .usage("Usage: xedge-get-settings")
  .showHelpOnFail(false, "oops, something went wrong! run with --help.")
- .example("get-settings")
+ .example("xedge-get-settings")
  .argv;
 
 const token = envHelpers.getToken();

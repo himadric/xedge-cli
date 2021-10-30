@@ -6,10 +6,10 @@ const envHelpers = require("../helpers/envHelpers");
 const axios = require("axios");
 
 const options = yargs
- .usage("Usage: get-webhooks --id <Webhook Id>")
+ .usage("Usage: xedge-get-webhooks --id <Webhook Id>")
  .option("webhook_id", { alias: "id", describe: "Webhook Id", type: "string", demandOption: false })
  .showHelpOnFail(false, "oops, something went wrong! run with --help.")
- .example("get-webhooks --id ac54309f-61ec-4f92-adc7-bfedbb4bea7f")
+ .example("xedge-get-webhooks --id ac54309f-61ec-4f92-adc7-bfedbb4bea7f")
  .argv;
 
 const token = envHelpers.getToken();

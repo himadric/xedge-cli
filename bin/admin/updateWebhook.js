@@ -8,11 +8,11 @@ const fs = require('fs');
 const path = require('path');
 
 const options = yargs
- .usage("Usage: update-webhook -f <json request file>")
+ .usage("Usage: xedge-update-webhook -f <json request file>")
  .option("id", { alias: "i", describe: "Id of the webhook", type: "string", demandOption: true })
  .option("file", { alias: "f", describe: "json file path", type: "string", demandOption: true })
  .showHelpOnFail(false, "oops, something went wrong! run with --help.")
- .example("update-webhook -i f9ae3ad8-efb7-4a31-82fb-89790e7dd6cf -f c:\webhooks\webhook-request.json")
+ .example("xedge-update-webhook -i f9ae3ad8-efb7-4a31-82fb-89790e7dd6cf -f c:\webhooks\webhook-request.json")
  .argv;
 
 const rawdata = fs.readFileSync(path.resolve(__dirname, options.file));

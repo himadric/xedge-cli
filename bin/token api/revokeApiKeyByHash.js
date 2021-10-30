@@ -5,10 +5,10 @@ const yargs = require("yargs");
 const envHelpers = require("../helpers/envHelpers");
 const axios = require("axios");
 const options = yargs
- .usage("Usage: revoke-api-key-by-hash -h <hash>")
+ .usage("Usage: xedge-revoke-api-key-by-hash -h <hash>")
  .option("hash", { alias: "h", describe: "Hash value for the Api Key", type: "string", demandOption: true })
  .showHelpOnFail(false, "oops, something went wrong! run with --help.")
- .example("revoke-api-key-by-hash -h cec0b2ebdce8e383f4ef0144c7c153ea2d3332c92ccd855ce5bce2b178edfaf9")
+ .example("xedge-revoke-api-key-by-hash -h cec0b2ebdce8e383f4ef0144c7c153ea2d3332c92ccd855ce5bce2b178edfaf9")
  .argv;
  
 const token = envHelpers.getToken();

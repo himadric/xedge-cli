@@ -6,10 +6,10 @@ const envHelpers = require("../helpers/envHelpers");
 const axios = require("axios");
 
 const options = yargs
- .usage("Usage: delete-cache --id <Collection Id>")
+ .usage("Usage: xedge-delete-cache --id <Collection Id>")
  .option("col_id", { alias: "id", describe: "Collection Id", type: "string", demandOption: false })
  .showHelpOnFail(false, "oops, something went wrong! run with --help.")
- .example("delete-cache --id 728ybIDJ7kK2XxYKLe5DqA")
+ .example("xedge-delete-cache --id 728ybIDJ7kK2XxYKLe5DqA")
  .argv;
 
 const token = envHelpers.getToken();

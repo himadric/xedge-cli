@@ -8,10 +8,10 @@ const fs = require('fs');
 const path = require('path');
 
 const options = yargs
- .usage("Usage: create-api-key -f <json request file>")
+ .usage("Usage: xedge-create-api-key -f <json request file>")
  .option("file", { alias: "f", describe: "json file path", type: "string", demandOption: true })
  .showHelpOnFail(false, "oops, something went wrong! run with --help.")
- .example("create-api-key -f c:\Keys\api-key-request.json")
+ .example("xedge-create-api-key -f c:\Keys\api-key-request.json")
  .argv;
 
 const rawdata = fs.readFileSync(path.resolve(__dirname, options.file));

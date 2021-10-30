@@ -6,9 +6,9 @@ const envHelpers = require("../helpers/envHelpers");
 const axios = require("axios");
 
 const options = yargs
- .usage("Usage: delete-content")
+ .usage("Usage: xedge-delete-content")
  .showHelpOnFail(false, "oops, something went wrong! run with --help.")
- .example("delete-content")
+ .example("xedge-delete-content")
  .argv;
 
 const token = envHelpers.getToken();

@@ -6,10 +6,10 @@ const envHelpers = require("../helpers/envHelpers");
 const axios = require("axios");
 
 const options = yargs
- .usage("Usage: get-api-key-by-hash -h <hash value>")
+ .usage("Usage: xedge-get-api-key-by-hash -h <hash value>")
  .option("hash", { alias: "h", describe: "hash value of the api key", type: "string", demandOption: true })
  .showHelpOnFail(false, "oops, something went wrong! run with --help.")
- .example("get-api-key-by-hash -h d5cd2de0251b0266cac7793a2f1b6af8b2edb7e78affb286373e00dc4153d57a")
+ .example("xedge-get-api-key-by-hash -h d5cd2de0251b0266cac7793a2f1b6af8b2edb7e78affb286373e00dc4153d57a")
  .argv;
 
 const token = envHelpers.getToken();
